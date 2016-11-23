@@ -8,7 +8,7 @@
     "url": "https://github.com/zackargyle/pinterest-api-demo"
   },
   "scripts": {
-    "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --hot --progress --colors",
+    "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --https --hot --progress --colors",
     "prod": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js -p && NODE_ENV=production node server.js",
     "static": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js -p && jade src/index.jade --out ./dist --obj {prod:true}",
     "deploy": "npm run static && git add -f dist && git commit -m \"deploy to gh-pages\" && git subtree split --prefix dist -b gh-pages && git push -f origin gh-pages:gh-pages && git branch -D gh-pages"

@@ -15,8 +15,17 @@ PDK.logout();
 The callback contains a `session` object that can also be accessed via `PDK.getSession()`. If a user is not authenticated, the function returns `undefined`. The scope is related to what kind of access your app would like (read_public, write_public, read_relationships, write_relationships). Scope is a comma-delimited list of requested types.
 
 ### John's Notes
-* `npm run prod` - generates `dist/app.js` and `dist/style.css` and runs the server.
+* `npm run prod` - generates `dist/app.js` and `dist/style.css` and runs the server. However, this is not really used.
 * `npm run static` - generates `dist/index.html`.
+* Steps for getting started:-
+  1. Create app on your Pinterest developer account.
+  2. Add `https://localhost:8080/dist/` under Redirect URIs of your app.
+  3. Edit `src/js/utils/consts.js`. Set the `PIN_APP` to your newly created app's App ID.
+  4. `$ npm run static`
+  5. `$ npm run dev`
+  6. On `https://localhost:8080`, click dist.
+  7. Login on Pinterest and authorize.
+  8. From here you can access and play around with the `PDK` object on browser console.
 
 ### Demo functions
 Here are the methods being used in this demo application:
