@@ -27,6 +27,7 @@
     "extract-text-webpack-plugin": "^0.8.2",
     "jade": "^1.11.0",
     "jsx-loader": "^0.13.2",
+    "node-sass": "^3.13.0",
     "postcss-loader": "^0.6.0",
     "precss": "^0.3.0",
     "react": "^0.13.3",

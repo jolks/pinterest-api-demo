@@ -14,6 +14,10 @@ PDK.logout();
 
 The callback contains a `session` object that can also be accessed via `PDK.getSession()`. If a user is not authenticated, the function returns `undefined`. The scope is related to what kind of access your app would like (read_public, write_public, read_relationships, write_relationships). Scope is a comma-delimited list of requested types.
 
+### John's Notes
+* `npm run prod` - generates `dist/app.js` and `dist/style.css` and runs the server.
+* `npm run static` - generates `dist/index.html`.
+
 ### Demo functions
 Here are the methods being used in this demo application:
 
